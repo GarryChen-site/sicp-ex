@@ -8,8 +8,8 @@
         ((even? count)
          (fib-iter a
                    b
-                   ;;
-                   ;;
+                   (+ (square p) (square q))
+                   (+ (* 2 p q) (square q))
                    (/ count 2)))
         (else (fib-iter (+ (* b q) (* a q) (* a p))
                         (+ (* b p) (* a q))
